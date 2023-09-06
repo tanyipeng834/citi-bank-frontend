@@ -12,7 +12,8 @@
 
     function routePage() {
         if (isSubmit) {
-            router.push({name: 'riskAssessment'})
+            router.push({name: 'riskAssessment'});
+            isSubmit.value = false;
         }
         else {
             window.location.reload();
