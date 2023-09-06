@@ -28,11 +28,7 @@
                 </button>
             </div>
         </div>
-<<<<<<< HEAD
         <SubmitModal v-if="isUpload"/>
-=======
-        
->>>>>>> bbd694e558a8fb7880d2619d40e4333199b6c890
     </div>
 </template>
 
