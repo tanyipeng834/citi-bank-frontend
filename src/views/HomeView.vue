@@ -9,7 +9,7 @@ const helpSupport = ['Contact Us', 'Help & FAQs', 'Security Center']
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen">
     <Navbar/>
  
     <footer class="bg-black text-white text-sm pt-9 pb-4">

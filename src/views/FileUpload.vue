@@ -1,18 +1,5 @@
-
-
-        
-
-
-
-
-
-
-
-
-
-
 <template>
-    <div class="flex-grow min-h-screen">
+    <div class="flex-grow">
         <div class="bg-blue-25 py-4 px-10 flex items-center">
             <img class="w-5 mr-6" src="@/assets/icons/information.png" alt="">
             <p class="text-base font-normal text-blue">Upload portfolio to get insights on the real-time risk assessment</p>
@@ -43,7 +30,6 @@
             </div>
         </div>
     </div>
-    
 </template>
 
 <script setup>
@@ -101,11 +87,7 @@
     // Changing file state
    file.value= uploadedFile;
    selectedFileName.value =uploadedFile.name;
-   
-   
   };
-    
-    
 </script>
 
 
