@@ -12,7 +12,7 @@
 
     function routePage() {
         if (isSubmit) {
-            router.push({name: 'portfolio'})
+            router.push({name: 'riskAssessment'})
         }
         else {
             window.location.reload();
@@ -25,8 +25,8 @@
         <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-10 backdrop-blur-sm">
             <div class="bg-blue-25 shadow-lg rounded-lg p-6">
                 <div class="flex items-center">
-                    <p v-if="isSubmit" class="text-base font-semibold mb-2 text-blue">Training materials uploaded successfully</p>
-                    <p v-else class="text-base font-semibold mb-2 text-blue">Training materials uploaded unsuccessfully</p>
+                    <p v-if="isSubmit" class="text-base font-semibold mb-2 text-blue">Uploaded Successfully</p>
+                    <p v-else class="text-base font-semibold mb-2 text-blue">Uploaded Unsuccessfully</p>
                 </div>
                 <button id="closeModalBtn" class="mt-4 text-blue hover:font-bold hover:text-white hover:bg-blue border border-blue px-4 py-2 rounded ml-auto" @click="routePage">Close</button>
             </div>

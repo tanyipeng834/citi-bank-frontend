@@ -9,9 +9,9 @@ const router = createRouter({
       component: () => import('@/views/FileUpload.vue')
     },
     {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: () => import('@/views/Portfolio.vue')
+      path: '/riskAssessment',
+      name: 'riskAssessment',
+      component: () => import('@/views/RiskAssessment.vue')
     },
   ]
 })

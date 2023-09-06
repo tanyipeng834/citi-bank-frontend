@@ -23,10 +23,10 @@
                 File Upload
             </router-link>
             <router-link
-                to="/portfolio"
-                :class="$route.name === 'portfolio' ? 'font-bold' : ''"
+                to="/riskAssessment"
+                :class="$route.name === 'riskAssessment' ? 'font-bold' : ''"
             >
-                Portfolio
+                Risk Assessment
             </router-link>
         </div>
         <router-view/>

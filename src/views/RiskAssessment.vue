@@ -8,8 +8,7 @@
            <p class="font-semibold text-blue text-18">Insights</p>
            <p class="font-normal text-blue text-16">narrative</p>
         </div>
-        <div>
-            <p class="font-semibold text-blue mt-7 mb-2">Risk Return Graph</p>
+        <div class="mt-7">
             hi
         </div>
     </div>
