@@ -1,6 +1,6 @@
 <template>
     <div class="flex-grow">
-        <div class="bg-blue-25 py-4 px-10 flex items-center">
+        <div class="bg-blue-25 py-4 px-14 flex items-center">
             <img class="w-5 mr-6" src="@/assets/icons/information.png" alt="">
             <p class="text-base font-normal text-blue">Upload portfolio to get insights on the real-time risk assessment</p>
         </div>

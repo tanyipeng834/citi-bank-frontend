@@ -4,7 +4,7 @@
 <template>
     <div>
         <div class="flex justify-center items-center mx-10">
-            <img class="w-16" src="@/assets/logo.png" alt="">
+            <img src="/citiredesign.svg" alt="">
             <div class="flex ml-auto justify-center items-center">
                 <img class="w-10" src="@/assets/avatar.svg" alt="">
                 <div class="text-blue ml-2.5">
@@ -14,7 +14,7 @@
                 <img class="ml-2.5 h-4" src="@/assets/icons/arrow.svg" alt="">
             </div>
         </div>
-        <div class="bg-blue mt-4 p-4 flex px-10 text-white text-base">
+        <div class="bg-blue p-4 flex px-14 text-white text-base">
             <router-link 
                 to="/"
                 class="mr-14"

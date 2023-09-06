@@ -12,7 +12,7 @@ const helpSupport = ['Contact Us', 'Help & FAQs', 'Security Center']
   <div class="min-h-screen">
     <Navbar/>
  
-    <footer class="bg-black text-white text-sm pt-9 pb-4">
+    <footer class="bg-black text-white text-sm pt-8 pb-4">
       <div class="grid md:grid-cols-5 grid-cols-9 gap-4 lg:px-28 px-6">
         <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Why Citi</p>
@@ -35,8 +35,8 @@ const helpSupport = ['Contact Us', 'Help & FAQs', 'Security Center']
           <p class="font-normal" v-for="(item, index) in helpSupport" :key="index">{{item}}</p>
         </div>
       </div>
-      <div class="px-14 mt-6 flex items-center">
-        <img class="w-16" src="@/assets/logo1.png" alt="">
+      <div class="px-10 mt-6 flex items-center">
+        <img src="@/assets/citiredesign-footer.svg" alt="">
         <p class="ml-auto font-semibold">&copy; 2023 Dolphins</p>
       </div>
     </footer>
