@@ -12,7 +12,6 @@
                     </svg>
                     <p class="mb-2 text-sm text-blue">
                         <span class="font-semibold">Click to upload</span> 
-                        or drag and drop
                     </p>
                     <p class="text-xs text-blue">
                         PDF, XLSX
