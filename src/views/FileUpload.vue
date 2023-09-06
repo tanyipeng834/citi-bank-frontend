@@ -4,7 +4,7 @@
             <img class="w-5 mr-6" src="@/assets/icons/information.png" alt="">
             <p class="text-base font-normal text-blue">Upload portfolio to get insights on the real-time risk assessment</p>
         </div>
-        <div class="mx-auto border-2 border-blue w-2/3 my-16 rounded-lg p-14">
+        <div class="mx-auto border-2 border-blue md:w-2/3 w-4/5 my-16 rounded-lg md:p-14 p-8">
             <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-blue border-dashed rounded-lg cursor-pointer bg-gray-25 hover:bg-gray-50">
                 <div class="flex flex-col items-center justify-center pt-5 pb-6">
                     <svg class="w-8 h-8 mb-4 text-blue dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
