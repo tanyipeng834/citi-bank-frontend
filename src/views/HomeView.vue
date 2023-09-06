@@ -11,26 +11,26 @@ const helpSupport = ['Contact Us', 'Help & FAQs', 'Security Center']
 <template>
   <div>
     <Navbar/>
-    <FileUpload/>
+ 
     <footer class="bg-black text-white text-sm pt-9 pb-4">
-      <div class="px-28 flex justify-center">
-        <div class="mr-auto">
+      <div class="grid md:grid-cols-5 grid-cols-9 gap-4 lg:px-28 px-6">
+        <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Why Citi</p>
           <p class="font-normal" v-for="(item, index) in whyCiti" :key="index">{{item}}</p>
         </div>
-        <div class="mr-auto">
+        <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Wealth Management</p>
           <p class="font-normal" v-for="(item, index) in wealthManagement" :key="index">{{item}}</p>
         </div>
-        <div class="mr-auto">
+        <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Business Banking</p>
           <p class="font-normal" v-for="(item, index) in businessBanking" :key="index">{{item}}</p>
         </div>
-        <div class="mr-auto">
+        <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Rates</p>
           <p class="font-normal" v-for="(item, index) in rates" :key="index">{{item}}</p>
         </div>
-        <div>
+        <div class="md:col-span-1 col-span-3">
           <p class="font-bold mb-2">Help & Support</p>
           <p class="font-normal" v-for="(item, index) in helpSupport" :key="index">{{item}}</p>
         </div>
