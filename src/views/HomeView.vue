@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue'
+import FileUpload from './FileUpload.vue';
 const whyCiti = ['Our Story', 'Careers', 'Benefits and Services', 'Rewards', 'Citi Entertainment', 'Special Offers']
 const wealthManagement = ['Citigold Private Client', 'Citigold', 'City Priority', 'City Private Bank']
 const businessBanking = ['Small Business Accounts', 'Commercial Accounts']
@@ -10,6 +11,7 @@ const helpSupport = ['Contact Us', 'Help & FAQs', 'Security Center']
 <template>
   <div>
     <Navbar/>
+    <FileUpload/>
     <footer class="bg-black text-white text-sm pt-9 pb-4">
       <div class="px-28 flex justify-center">
         <div class="mr-auto">
