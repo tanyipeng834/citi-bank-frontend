@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="my-5 font-montserrat">
+  <div class="mt-5 font-montserrat relative">
     <HomeView/>
   </div>
 </template>

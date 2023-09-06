@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    file
+    <div class="flex-grow min-h-screen">
+        file
+    </div>
 </template>
