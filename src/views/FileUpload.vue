@@ -28,18 +28,27 @@
                 </button>
             </div>
         </div>
+        <SubmitModal v-if="isUpload"/>
     </div>
 </template>
 
 <script setup>
     import AWS from 'aws-sdk';
     import { ref } from 'vue';
-    const selectedFileName = ref("");
+    import { storeToRefs } from "pinia";
+    import { useFileUploadStore } from "@/stores/useFileUploadStore";
+    import SubmitModal from "@/components/SubmitModal.vue";
 
+    const selectedFileName = ref("");
     const file = ref(null);
+    const isUpload = ref(false);
+    const store = useFileUploadStore();
+    const {
+        isSubmit,
+    } = storeToRefs(store);
+
     const accessKey = import.meta.env.VITE_AWS_ACCESS_KEY;
     const secretKey = import.meta.env.VITE_AWS_SECRET_KEY;
-
    
     const uploadFile = async () => {
     // S3 Bucket Name
@@ -71,11 +80,13 @@
       console.log(data);
       console.log(file);
       // File successfully uploaded
-      alert("Training materials uploaded successfully.");
+      isUpload.value = true;
+      isSubmit.value = true;
+    //   alert("Training materials uploaded successfully.");
     } catch (error) {
       console.error(error);
       // Error uploading file
-      alert("Training materials uploaded unsuccessfully.");
+    //   alert("Training materials uploaded unsuccessfully.");
     }
   };
 
@@ -88,12 +99,3 @@
    selectedFileName.value =uploadedFile.name;
   };
 </script>
-
-
-
-
-
-
-
-
-
