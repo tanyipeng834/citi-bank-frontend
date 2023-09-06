@@ -9,7 +9,7 @@
                 <img class="w-10" src="@/assets/avatar.svg" alt="">
                 <div class="text-blue ml-2.5">
                     <p class="font-semibold text-base">Citi</p>
-                    <p class="font-medium text-xs">Risk Manager</p>
+                    <p class="font-medium text-xs">Credit Analyst</p>
                 </div>
                 <img class="ml-2.5 h-4" src="@/assets/icons/arrow.svg" alt="">
             </div>
