@@ -7,10 +7,14 @@ module.exports = {
     colors:{
       black: '#333333',
       white: colors.white,
+      gray: {
+        50: '#D9DFEA',
+        25: '#E5EAF1'
+      },
       blue: {
         DEFAULT: '#002D72',
         50: '#056DAE',
-        25: '#00B4F0',
+        25: '#D9F4FD',
       },
     },
     fontFamily: {
