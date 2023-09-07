@@ -56,6 +56,17 @@
 
     const accessKey = import.meta.env.VITE_AWS_ACCESS_KEY;
     const secretKey = import.meta.env.VITE_AWS_SECRET_KEY;
+
+    const process = async () => {
+        try {
+            // TO-DO:
+            const response = await axios.post(`/process`, data.Key);
+            console.log(response);
+        }
+        catch (error) {
+            console.log(error.message);
+        }
+    }
    
     const uploadFile = async () => {
         isUpload.value = true;
@@ -85,8 +96,9 @@
         // Uploading file to s3
         try {
             const data = await s3.upload(params).promise();
-            // console.log(data);
+            console.log(data);
             // console.log(file);
+            process();
             // File successfully uploaded
             isUpload.value = false;
             isProcess.value = true;
