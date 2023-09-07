@@ -1,5 +1,9 @@
 <script setup>
 import Card from "@/components/Card.vue";
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 
 // const insights = async () => {
 //     try {
@@ -11,7 +15,7 @@ import Card from "@/components/Card.vue";
 //         console.log(error.message);
 //     }
 // }
-// insights();
+// insightData = insights();
 
 // const result = async () => {
 //     try {
@@ -23,14 +27,19 @@ import Card from "@/components/Card.vue";
 //         console.log(error.message);
 //     }
 // }
-// result();
+// resultData = result();
 
-const selectCard = id => { 
-    console.log(id);
+const selectCard = prop => { 
+    router.push({
+        name: 'detailedResult',
+        params: {
+            id: prop.id,
+        }
+    });
 }
 
-const insights = ["Line 1", "Line 2"];
-const result = [
+const insightData = ["Line 1", "Line 2"];
+const resultData = [
     {
         id: 1,
         name: "Jason Christopher",
@@ -49,7 +58,7 @@ const result = [
         <div class="bg-blue-25 py-4 px-7 rounded-lg">
            <p class="font-semibold text-blue text-18">Insights</p>
            <ul>
-               <li v-for="(item, index) in insights" :key="index" class="font-normal text-blue text-base list-disc ml-6">
+               <li v-for="(item, index) in insightData" :key="index" class="font-normal text-blue text-base list-disc ml-6">
                     {{ item }}
                </li>
            </ul>
@@ -66,7 +75,7 @@ const result = [
                     Percentage of Credit Default
                 </div>
             </div>
-           <Card v-for="(item, index) in result" :key="index" :data="item" @select-card="selectCard" />
+           <Card v-for="(item, index) in resultData" :key="index" :data="item" @select-card="selectCard" />
         </div>
     </div>
 </template>

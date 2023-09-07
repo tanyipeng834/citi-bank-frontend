@@ -13,6 +13,11 @@ const router = createRouter({
       name: 'riskAssessment',
       component: () => import('@/views/RiskAssessment.vue')
     },
+    {
+      path: '/detailedResult/:id',
+      name: 'detailedResult',
+      component: () => import('@/views/DetailedResult.vue'),
+    },
   ]
 })
 
