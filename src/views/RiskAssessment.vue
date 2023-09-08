@@ -79,7 +79,7 @@ const selectCard = prop => {
                     Percentage of Credit Default
                 </div>
             </div>
-           <Card v-for="(item, index) in resultData" :key="index" :data="item" @select-card="selectCard" />
+           <Card v-for="(item, index) in resultData.value" :key="index" :data="item" @select-card="selectCard" />
         </div>
     </div>
 </template>
