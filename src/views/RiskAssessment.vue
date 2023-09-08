@@ -12,7 +12,7 @@ const resultData = ref("");
 const insights = async () => {
     try {
         // TO-DO:
-        const insightResponse = await axios.get(`http://localhost:8000/api/insight`);
+        const insightResponse = axios.get(`http://localhost:8000/api/insight`);
         return insightResponse.data;
     }
     catch (error) {
@@ -24,7 +24,7 @@ insightData.value = insights();
 const result = async () => {
     try {
         // TO-DO:
-        const resultResponse = await axios.get(`http://localhost:8000/api/result`);
+        const resultResponse = axios.get(`http://localhost:8000/api/result`);
         return resultResponse.data;
     }
     catch (error) {

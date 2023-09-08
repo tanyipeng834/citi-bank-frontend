@@ -10,7 +10,7 @@ const result = ref("");
 const detailedResult = async () => {
     try {
         // TO-DO:
-        const detailedResponse = await axios.get(`http://localhost:8000/api/result/${id}`);
+        const detailedResponse =  axios.get(`http://localhost:8000/api/result/${id}`);
         return detailedResponse.data;
     }
     catch (error) {
