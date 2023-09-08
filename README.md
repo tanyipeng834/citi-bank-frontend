@@ -1,3 +1,8 @@
+
+# Slide Deck
+
+[Slide Deck Link](https://docs.google.com/presentation/d/1Med0m6-C9CqLbqXNDTHtNYJ2_0rDmPgwNoPVLU0qSkA/edit?usp=sharing)
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
