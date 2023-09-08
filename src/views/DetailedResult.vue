@@ -41,16 +41,16 @@ const result.value = detailedResult();
         </div>
         <div class="grid grid-cols-4 bg-gray-25 rounded-sm py-2 px-7 items-center text-base text-blue">
             <div class="col-span-1 font-normal text-base">
-                {{ result.value.id }}
+                {{ result.id }}
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.value.name }}
+                {{ result.name }}
             </div>
             <div class="col-span-1 font-normal text-base">
                
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.value.percentage }}%
+                {{ result.percentage }}%
             </div>
         </div>
     </div>

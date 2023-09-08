@@ -62,7 +62,7 @@ const selectCard = prop => {
         <div class="bg-blue-25 py-4 px-7 rounded-lg">
            <p class="font-semibold text-blue text-18">Insights</p>
            <ul>
-               <li v-for="(item, index) in insightData.value" :key="index" class="font-normal text-blue text-base list-disc ml-6">
+               <li v-for="(item, index) in insightData" :key="index" class="font-normal text-blue text-base list-disc ml-6">
                     {{ item }}
                </li>
            </ul>
@@ -79,7 +79,7 @@ const selectCard = prop => {
                     Percentage of Credit Default
                 </div>
             </div>
-           <Card v-for="(item, index) in resultData.value" :key="index" :data="item" @select-card="selectCard" />
+           <Card v-for="(item, index) in resultData" :key="index" :data="item" @select-card="selectCard" />
         </div>
     </div>
 </template>
