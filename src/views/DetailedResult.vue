@@ -50,7 +50,7 @@ const result.value = detailedResult();
                
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.value.percentage }}%
+                {{ result.value.percentage }} %
             </div>
         </div>
     </div>
