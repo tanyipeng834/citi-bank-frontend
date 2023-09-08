@@ -38,19 +38,19 @@ const selectCard = prop => {
     });
 }
 
-const insightData = ["Line 1", "Line 2"];
-const resultData = [
-    {
-        id: 1,
-        name: "Jason Christopher",
-        percentage: 99.001,
-    },
-    {
-        id: 2,
-        name: "Low Xuanli",
-        percentage: 99.999,
-    }
-]
+// const insightData = ["Line 1", "Line 2"];
+// const resultData = [
+//     {
+//         id: 1,
+//         name: "Jason Christopher",
+//         percentage: 99.001,
+//     },
+//     {
+//         id: 2,
+//         name: "Low Xuanli",
+//         percentage: 99.999,
+//     }
+// ]
 </script>
 
 <template>
