@@ -4,24 +4,19 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 const id = route.params.id;
 
-// const detailedResult = async () => {
-//     try {
-//         // TO-DO:
-//         const detailedResponse = await axios.get(`/result/${id}`);
-//         return detailedResponse.data;
-//     }
-//     catch (error) {
-//         console.log(error.message);
-//     }
-// }
-// const result = detailedResult();
-
-const result = {
-    id: 1,
-    name: "Jason Christopher",
-    features: "hi",
-    percentage: 99.01,
+const detailedResult = async () => {
+    try {
+        // TO-DO:
+        const detailedResponse = await axios.get(`http://localhost:8000/result/${id}`);
+        return detailedResponse.data;
+    }
+    catch (error) {
+        console.log(error.message);
+    }
 }
+const result = detailedResult();
+
+
 </script>
 
 <template>
@@ -49,7 +44,7 @@ const result = {
                 {{ result.name }}
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.features }}
+               
             </div>
             <div class="col-span-1 font-normal text-base">
                 {{ result.percentage }}%

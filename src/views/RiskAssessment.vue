@@ -5,29 +5,29 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 
-// const insights = async () => {
-//     try {
-//         // TO-DO:
-//         const insightResponse = await axios.get(`/insight`);
-//         return insightResponse.data;
-//     }
-//     catch (error) {
-//         console.log(error.message);
-//     }
-// }
-// insightData = insights();
+const insights = async () => {
+    try {
+        // TO-DO:
+        const insightResponse = await axios.get(`http://localhost:8000/insight`);
+        return insightResponse.data;
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+}
+insightData = insights();
 
-// const result = async () => {
-//     try {
-//         // TO-DO:
-//         const resultResponse = await axios.get(`/result`);
-//         return resultResponse.data;
-//     }
-//     catch (error) {
-//         console.log(error.message);
-//     }
-// }
-// resultData = result();
+const result = async () => {
+    try {
+        // TO-DO:
+        const resultResponse = await axios.get(`http://localhost:8000/result`);
+        return resultResponse.data;
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+}
+resultData = result();
 
 const selectCard = prop => { 
     router.push({
