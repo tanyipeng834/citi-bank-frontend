@@ -1,8 +1,11 @@
 <script setup>
 import { useRoute } from 'vue-router';
+import { ref } from 'vue';
+import axios from 'axios';
 
 const route = useRoute();
 const id = route.params.id;
+const result = ref("");
 
 const detailedResult = async () => {
     try {
@@ -14,7 +17,7 @@ const detailedResult = async () => {
         console.log(error.message);
     }
 }
-const result = detailedResult();
+const result.value = detailedResult();
 
 
 </script>
@@ -38,16 +41,16 @@ const result = detailedResult();
         </div>
         <div class="grid grid-cols-4 bg-gray-25 rounded-sm py-2 px-7 items-center text-base text-blue">
             <div class="col-span-1 font-normal text-base">
-                {{ result.id }}
+                {{ result.value.id }}
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.name }}
+                {{ result.value.name }}
             </div>
             <div class="col-span-1 font-normal text-base">
                
             </div>
             <div class="col-span-1 font-normal text-base">
-                {{ result.percentage }}%
+                {{ result.value.percentage }}%
             </div>
         </div>
     </div>

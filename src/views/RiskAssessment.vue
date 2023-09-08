@@ -1,8 +1,12 @@
 <script setup>
 import Card from "@/components/Card.vue";
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
+import axios from 'axios';
 
 const router = useRouter();
+const insightData = ref("");
+const resultData = ref("");
 
 
 const insights = async () => {
@@ -15,7 +19,7 @@ const insights = async () => {
         console.log(error.message);
     }
 }
-insightData = insights();
+insightData.value = insights();
 
 const result = async () => {
     try {
@@ -27,7 +31,7 @@ const result = async () => {
         console.log(error.message);
     }
 }
-resultData = result();
+resultData.value = result();
 
 const selectCard = prop => { 
     router.push({
@@ -58,7 +62,7 @@ const selectCard = prop => {
         <div class="bg-blue-25 py-4 px-7 rounded-lg">
            <p class="font-semibold text-blue text-18">Insights</p>
            <ul>
-               <li v-for="(item, index) in insightData" :key="index" class="font-normal text-blue text-base list-disc ml-6">
+               <li v-for="(item, index) in insightData.value" :key="index" class="font-normal text-blue text-base list-disc ml-6">
                     {{ item }}
                </li>
            </ul>
